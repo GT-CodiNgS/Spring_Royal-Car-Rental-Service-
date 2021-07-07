@@ -1,0 +1,17 @@
+#overview-btn{!important;
+    width: 96vw;
+    height: 25vh;
+    margin: 30px;
+}
+#overview-btn>a>div:nth-child(1){
+    border-radius: 8px;
+}
+#overview-btn>a>div>img{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+}
+#overview-btn>a>div:nth-child(1)>div>h1{
+    font-size: 55px;
+    font-weight: bold;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <link href="assests/css/customerStyles.css" rel="stylesheet">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+    <link href="assests/css/normalize.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+       <h2 style="margin-left: 30px" class="mt-5">Customer</h2>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+        </div>
+    </nav>
+
+
+</header>
+<section id="sec1" style="height: 100vh; width: 100vw">
+    <div class="container-fluid m-0">
+        <div class="row">
+
+                <div class="col-md-3 col-xl-3">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <h3 class="card-title mb-0">Profile Details</h3>
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="assests/img/admin/user-male.png" alt="Marie Salter" class="img-fluid rounded-circle mb-2" width="128" height="128">
+
+
+
+                        </div>
+
+
+                        <hr class="my-0">
+                        <div class="card-body">
+                            <h5 class="h4 card-title">About</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1">
+                                     <h1 id="lbl-name">Marie Salter</h1>
+                                </li>
+                                <li class="mb-1">
+                                    <h4 id="lbl-email">email</h4>
+                                </li>
+
+
+                                <li class="mb-1">
+                                    <h4 id="lbl-nic">97069154V</h4>
+                                </li>
+                                <li class="mb-1">
+                                    <h4 id="lbl-gender">Male</h4>
+                                </li>
+                                <li class="mb-1">
+                                    <h4 id="lbl-city">Hikkaduwa</h4>
+                                </li>
+                                <li class="mb-1">
+                                     <h4 id="lbl-contact">0767737579</h4>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            <div class="col-auto col-xl-7 m-5" >
+                    <div class="row">
+                        <div class="col-6 col-xl-6" >
+                            <form>
+                                <div class="form-group">
+                                    <label class="text-danger" for="cID"> Enter Your ID   </label>
+                                    <input type="text" class="form-control " id="cID" >
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="bID">Booking ID</label>
+                                        <input type="text" class="form-control" id="bID" >
+                                    </div>
+                                    <label for="sel1">Select Car</label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Toyota</option>
+                                        <option>Vezel</option>
+                                        <option>Wagon r</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="carID" >Car ID</label>
+                                    <input type="text" class="form-control " id="carID" readonly >
+                                </div>
+                                <div class="form-group">
+                                    <label for="sel1">Driver</label>
+                                    <select class="form-control" id="diver">
+                                        <option>With driver</option>
+                                        <option>Without driver</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dirverID">Driver ID</label>
+                                    <input type="text" class="form-control " id="dirverID" readonly>
+                                </div>
+
+
+
+
+
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+
+<!--                        ****-->
+                        <div class="col-6 col-xl-6">
+                            <form>
+
+                                <div class="form-group">
+                                    <label for="pickup-date">Pickup date</label>
+                                    <input type="date" class="form-control" id="pickup-date" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="return-date">Return date</label>
+                                    <input type="date" class="form-control" id="return-date" >
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+                                    <input type="text" class="form-control" id="location" >
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                    </div>
+
+
+        </div>
+
+    </div>
+
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">CarID</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">BOD</th>
+            <th scope="col">Contact no</th>
+            <th scope="col">BOD</th>
+            <th scope="col">BOD</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+
+            <td>C001</td>
+            <td>Mark</td>
+            <td>Panadura</td>
+            <td>1997.03.09</td>
+            <td>0767737579</td>
+            <td></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+
+
+</div>
+
+</section>
+
+
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="assests/js/index.js"></script>
+
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>

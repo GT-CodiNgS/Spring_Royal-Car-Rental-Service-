@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Royal Rent A Car</title>
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+    <link href="assests/css/styles.css" rel="stylesheet">
+    <link href="assests/css/normalize.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<section id="homeimg" style="">
+    <img src="assests/img/Login/home_pic.jpg" alt="">
+    <h1  class="ml12" id="batch">ROYAL RENT A CAR SERVICE</h1>
+        <h3 id="batch2">Enjoy your holidays with our wheels,with the best price</h3>
+    <a class="nav-link " data-bs-target="#modalsignup1"
+       data-bs-toggle="modal">
+        <button id="btnLogin" class="btn bg-transparent">
+            LOGIN
+        </button>
+    </a>
+
+
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
+         data-bs-keyboard="false"
+         id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-content-xxl-between">
+                    <h5 class="modal-title " id="aboutModalTitle">Sign in</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="imgcontainer">
+                            <img src="assests/img/Login/icon-5359553_1280.png" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                            <input type="checkbox" onclick="myFunction()">Show Password
+
+                            <button type="button">Login</button>
+
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+
+                            <span class="psw">Create <label data-bs-toggle="modal" data-bs-target="#modalsignup"
+                                                            id="newAccount" href="">New Account?</label></span>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade " data-bs-backdrop="static"
+         data-bs-keyboard="false"
+         id="modalsignup1" tabindex="-1">
+        <div class="modal-dialog d-flex">
+
+            <div class="modal-content">
+                <div id="close-div" class="">
+                    <button aria-label="Close" class="btn-close m-auto" data-bs-dismiss="modal" type="button"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="frame">
+                            <div class="nav">
+                                <ul class="links">
+                                    <li class="signin-active"><a class="btn">Sign in</a></li>
+                                    <li class="signup-inactive"><a class="btn">Sign up </a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <form class="form-signin" action="" name="form">
+                                    <label for="username">UserID</label>
+                                    <input id="username" class="form-styling" type="text" name="username" placeholder=""/>
+                                    <label for="password">Password</label>
+                                    <input id="password" class="form-styling" type="password" name="password" placeholder=""/>
+
+                                    <div class="d-flex">
+                                        <input class="mt-auto" type="checkbox" id="checkbox"/>
+
+                                        <label for="checkbox"><span class="ui"></span>Show password</label>
+                                    </div>
+
+                                       <a id="sign-in" href="" style="color: white" class="btn-signin">Sign in</a>
+
+
+                                </form>
+                                <form class="form-signup" action=""  name="form">
+                                    <label for="cusID">Customer ID</label>
+                                    <input id="cusID" class="form-styling" type="text" name="cusID" placeholder=""/>
+
+                                    <label for="name">Customer Name</label>
+                                    <input id="name" class="form-styling" type="text" name="name" placeholder=""/>
+
+                                    <label for="email">Email</label>
+                                    <input id="email" class="form-styling" type="text" name="email" placeholder=""/>
+
+                                    <label for="contact">Contact Number</label>
+                                    <input id="contact" class="form-styling" type="text" name="contact" placeholder=""/>
+
+                                    <label for="address">Address</label>
+                                    <input id="address" class="form-styling" type="text" name="address" placeholder=""/>
+
+                                    <label for="licenseNo">License No</label>
+                                    <input id="licenseNo" class="form-styling" type="text" name="licenseNo" placeholder=""/>
+
+                                    <label for="nicNo">NIC No</label>
+                                    <input id="nicNo" class="form-styling" type="text" name="nicNo" placeholder=""/>
+
+                                    <label for="passwordNew">Password</label>
+                                    <input id="passwordNew" class="form-styling" type="text" name="password" placeholder=""/>
+
+                                    <label for="confirmpassword">Confirm password</label>
+                                    <input id="confirmpassword" class="form-styling" type="text" name="confirmpassword" placeholder=""/>
+
+
+                                    <a  class="btn-signup">Sign Up</a></form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<div id="guest">
+
+    <div class="carSection">
+
+
+        <div class="sectionName">
+            <h1 class="sectionName">General Cars</h1>
+        </div>
+
+
+        <div id="generalCars">
+
+            <section class="col-md-12 p-0">
+
+                <div  class="container div">
+                    <div class="row">
+                        <div class="section1 col">
+                            <div id="imgBox1" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/alto11.jpeg">
+
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox1" style="">
+                                <h1 class="carName">Suzuki Alto - Premium -
+                                    Manual</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA001</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.8000.00</li>
+                                    <li>Monthly rate :  Rs.10000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.80.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox5" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/vitz.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox5" style="margin: auto;position: relative;">
+                                <h1 class="carName">TOYOTA VitZ</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA002</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.8000.00</li>
+                                    <li>Monthly rate :  Rs.10000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.80.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox6" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Susuki%20Alto.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox6" style=";margin: auto;position: relative;">
+                                <h1 class="carName">Zuzuki Alto</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA003</h2>
+                                <h2>* Transmission type : Manual</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.5000.00</li>
+                                    <li>Monthly rate :  Rs.50000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.50.00</h2>
+                                <h2>* Color : red</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div  class="container div">
+                    <div class="row">
+                        <div class="section1 col">
+                            <div id="imgBox4" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/aqua.png">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox4" style="margin: auto;position: relative;" >
+                                <h1 class="carName">TOYOTA Aqua</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA004</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.1000.00</li>
+                                    <li>Monthly rate :  Rs.10000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.80.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox2" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/hero_image_corolla.png">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox2" style="">
+                                <h1 class="carName">TOYOTA Vigo</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA005</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.8000.00</li>
+                                    <li>Monthly rate :  Rs.10000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.80.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox3" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/hero_image_corolla.png">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox3" style="margin: auto;position: relative;">
+                                <h1 class="carName">TOYOTA Corolla</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA006</h2>
+                                <h2>* Transmission type : Manual</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.15000.00</li>
+                                    <li>Monthly rate :  Rs.150000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : silva</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <h1 class="sectionName">Premium Cars</h1>
+
+        <div id="premiumCars">
+            <section class="col-md-12 p-0">
+
+                <div  class="container div">
+                    <div class="row">
+                        <div class="section1 col">
+                            <div id="imgBox7" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Toyota-Prius-XLE-AWD-e-2021.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox7" style="margin: auto;position: relative;">
+                                <h1 class="carName">TOYOTA Prius</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA007</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.1300.00</li>
+                                    <li>Monthly rate :  Rs.13000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.80.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox8" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/grace.png">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox8" style="">
+                                <h1 class="carName">TOYOTA Grace</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA008</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.1500.00</li>
+                                    <li>Monthly rate :  Rs.15000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox9" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/mazda_axela_659.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox9" style="margin: auto;position: relative;">
+                                <h1 class="carName">MAZDA Axela</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA009</h2>
+                                <h2>* Transmission type : Manual</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.15000.00</li>
+                                    <li>Monthly rate :  Rs.150000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : red</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div  class="container div">
+                    <div class="row">
+                        <div class="section1 col">
+                            <div id="imgBox10" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/nissan%20ny.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox10" style="">
+                                <h1 class="carName">Nisan NY</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA010</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.1400.00</li>
+                                    <li>Monthly rate :  Rs.14000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox11" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Toyota-C-HR-LE-2020.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox11" style="margin: auto;position: relative;">
+                                <h1 class="carName">TOYOTA CHR</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA011</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.16000.00</li>
+                                    <li>Monthly rate :  Rs.16000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.120.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox12" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/honda_vezel.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox12" style="margin: auto;position: relative;">
+                                <h1 class="carName">TOYOTA Vezel</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA012</h2>
+                                <h2>* Transmission type : Manual</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.15000.00</li>
+                                    <li>Monthly rate :  Rs.150000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : Red</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <h1 class="sectionName">General Cars</h1>
+
+        <div id="luxuryCars">
+            <section class="col-md-12 p-0">
+
+                <div  class="container div">
+                    <div class="row">
+                        <div class="section1 col">
+                            <div id="imgBox13" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Lexus-LS-500-2020.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox13" style="">
+                                <h1 class="carName">Lexus LS 500</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA013</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.2000.00</li>
+                                    <li>Monthly rate :  Rs.20000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.200.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox14" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/rollsroys.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox14" style="">
+                                <h1 class="carName">Rolls-Royce</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA014</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.1500.00</li>
+                                    <li>Monthly rate :  Rs.15000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox15" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Range.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox15" style="">
+                                <h1 class="carName">Range Rover</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA015</h2>
+                                <h2>* Transmission type : Manual</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.30000.00</li>
+                                    <li>Monthly rate :  Rs.30000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.200.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div  class="container div">
+                    <div class="row">
+                        <div class="section1 col">
+                            <div id="imgBox16" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Audi.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox16" style="">
+                                <h1 class="carName">Audi</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA016</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.3000.00</li>
+                                    <li>Monthly rate :  Rs.240000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.100.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox17" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/Audi%20S5.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox17" style="margin: auto;position: relative;">
+                                <h1 class="carName">Audi S5</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA017</h2>
+                                <h2>* Transmission type : Auto</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.40000.00</li>
+                                    <li>Monthly rate :  Rs.4000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.120.00</h2>
+                                <h2>* Color : White</h2>
+                            </div>
+                        </div>
+
+                        <div class="section1 col">
+                            <div id="imgBox18" class="imgBox">
+                                <img class="img" src="assests/img/Login/cars/bence.jpg">
+
+                            </div>
+                            <div class="detailsBox" id="DetailsBox18" style="">
+                                <h1 class="carName">Mercedes Bens</h1>
+                                <h2 style="font-weight: bolder">* Car ID : CA018</h2>
+                                <h2>* Transmission type : Manual</h2>
+                                <ul>
+                                    <li>Daily rate :  Rs.35000.00</li>
+                                    <li>Monthly rate :  Rs.350000.00</li>
+                                </ul>
+                                <h2>* extra KM : rs.350.00</h2>
+                                <h2>* Color : Silva</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!--*****************-->
+
+
+
+
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="assests/js/index.js"></script>
+
+<script src="assests/js/bootstrap.min.js"></script>
+<script>
+
+</script>
+</body>
+</html>

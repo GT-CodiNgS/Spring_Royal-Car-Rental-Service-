@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link href="assests/css/admin.css" rel="stylesheet">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+    <link href="assests/css/normalize.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <h2 style="margin-left: 30px" class="mt-5">ADMIN FORM</h2>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+        </div>
+    </nav>
+
+
+</header>
+
+<section style="width: 95vw ; height: 25vh" id="overview-btn" class="row ">
+    <a id="btn-view-customers" class="col text-decoration-none" data-bs-target="#customerModal"
+       data-bs-toggle="modal">
+        <div class=" btn-success d-flex ">
+            <img src="assests/img/admin/user-male.png" alt="">
+            <div class="d-inline m-auto">
+                <h3>Customers</h3>
+                <h1 id="cutomer-count" class="">0</h1>
+            </div>
+
+        </div>
+    </a>
+    <a class="col text-decoration-none" data-bs-target="#bookingModal"
+       data-bs-toggle="modal">
+        <div class=" btn-danger d-flex ">
+            <img src="assests/img/admin/calendar-icon-png-14.png" alt="">
+            <div class="d-inline m-auto">
+                <h3>Bookings</h3>
+                <h1 id="booking-count" class="">0</h1>
+            </div>
+
+        </div>
+    </a>
+    <a class="col text-decoration-none" data-bs-target="#carModal"
+       data-bs-toggle="modal">
+        <div class=" btn-primary d-flex ">
+            <img src="assests/img/admin/chevrolet-icon-24.jpg" alt="">
+            <div class="d-inline m-auto">
+                <h3>Cars</h3>
+                <h1 id="car-count" class="">0</h1>
+            </div>
+
+        </div>
+    </a>
+</section>
+
+
+<!--**-->
+<div id="customerModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <table class="table" id="customer-table">
+                <thead>
+                <tr>
+                    <th scope="col">CusID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Li num</th>
+                    <th scope="col">nic no</th>
+                    <th scope="col">Pw</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div id="bookingModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <table class="table" id="booking-table">
+                <thead>
+                <tr>
+                    <th scope="col">Booking ID</th>
+                    <th scope="col">With or Without driver</th>
+                    <th scope="col">Pickup_Date</th>
+                    <th scope="col">Return_Date</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Permission</th>
+                    <th scope="col">Cus_ID</th>
+                    <th scope="col">Car_ID</th>
+                    <th scope="col">Driver_ID</th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="carModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <table id="car-table" class="table">
+                <thead>
+                <tr>
+                    <th scope="col">CarID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Passengers</th>
+                    <th scope="col">Transmission</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Fuel</th>
+                    <th scope="col">Daily_Rate</th>
+                    <th scope="col">free_KM_per-day</th>
+                    <th scope="col">Monthly_Rate</th>
+                    <th scope="col">free_KM_per-month</th>
+                    <th scope="col">extra_Km_Price</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div style="height: 120px ;width: 180px ;margin-right: 50px" class="row float-end">
+    <a class="nav-link btn-warning m-1 text-center" data-bs-target="#loginModal"
+       data-bs-toggle="modal">ADD Driver
+    </a>
+    <a class="nav-link btn-dark m-1 text-center" data-bs-target="#loginModal"
+       data-bs-toggle="modal">View Drivers
+    </a>
+
+</div>
+
+
+<div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
+     data-bs-keyboard="false"
+     id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header align-content-xxl-between">
+                <h5 class="modal-title " id="aboutModalTitle">ADD NEW DRIVER</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="d-id">Driver ID</label>
+                        <input type="text" class="form-control" id="d-id">
+                    </div>
+                    <div class="form-group">
+                        <label for="d-name">Driver Name</label>
+                        <input type="text" class="form-control" id="d-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="d-ob">Date of birth</label>
+                        <input type="text" class="form-control" id="d-ob">
+                    </div>
+                    <div class="form-group">
+                        <label for="d-contact">Location</label>
+                        <input type="text" class="form-control" id="d-contact">
+                    </div>
+                    <div class="form-group">
+                        <label for="d-li-num">Driving License Number</label>
+                        <input type="text" class="form-control" id="d-li-num">
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<h1 class="m-5">Booking requests</h1>
+
+
+<div class="m-5">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">CarID</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">BOD</th>
+            <th scope="col">Contact no</th>
+            <th scope="col">License num</th>
+            <th scope="col">Permission</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+
+            <td>C001</td>
+            <td>Mark</td>
+            <td>Panadura</td>
+            <td>1997.03.09</td>
+            <td>0767737579</td>
+            <td>B265646844</td>
+            <td>
+                <button class="btn-success">approve</button>
+            </td>
+
+        </tr>
+        <tr>
+
+            <td>C001</td>
+            <td>Mark</td>
+            <td>Panadura</td>
+            <td>1997.03.09</td>
+            <td>0767737579</td>
+            <td>B265646844</td>
+            <td>
+                <button class="btn-success">approve</button>
+            </td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="assests/js/admin.js"></script>
+<script src="assests/js/index.js"></script>
+
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
